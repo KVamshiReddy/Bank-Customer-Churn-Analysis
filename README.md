@@ -1,2 +1,8 @@
 # Bank-Customer-Churn-Analysis
-The Bank Customer Churn Analysis project used machine learning to predict customer attrition. It involved data preprocessing, EDA, feature engineering, and applying models like Logistic Regression, Decision Trees, and Random Forest to identify key churn factors and improve customer retention.
+The Bank Customer Churn Analysis project aimed to predict customer attrition and identify key factors contributing to churn. The process began with loading and exploring customer data to understand its structure, handle missing values, and perform statistical analysis. Irrelevant features like RowNumber, CustomerId, and Surname were dropped to reduce noise.
+
+Categorical variables, such as geography and gender, were encoded using one-hot encoding to make them suitable for machine learning models. The dataset was then split into features (X) and the target variable (qExited), representing whether a customer had churned. To ensure robust model performance, the data was divided into training and testing sets using an 80-20 split, followed by feature scaling with StandardScaler for normalization.
+
+Multiple classification algorithms were implemented, including Logistic Regression, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random Forests, and Gradient Boosting Classifiers. These models were trained to capture complex patterns in customer behavior. Class imbalance, a common issue in churn datasets, was addressed using SMOTE (Synthetic Minority Over-sampling Technique), though some implementations were commented out.
+
+Model performance was evaluated using key metrics such as Accuracy, Precision, Recall, F1-Score, and Confusion Matrix. These metrics provided insights into the models' ability to correctly identify churned and retained customers. The final models highlighted crucial factors influencing churn, helping banks develop proactive retention strategies based on data-driven insights.
